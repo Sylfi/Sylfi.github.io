@@ -6,12 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="style.css">
+    
 
     <!-- Bootstrap CSS -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     
     <title>La nouvelle forge</title>
         
@@ -26,11 +26,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-            <span class="navbar-text">
-                    La nouvelle forge
-                  </span>
-          </nav>
+
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                    <a class="nav-link" href="#le-concept">Le concept</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </li>
+        </ul>
+
+    </nav>
 
     <div class="container-fluid d-flex bg-dark">
         
@@ -44,34 +55,59 @@
 
     </div>
     
-    <div class="container-fluid d-flex flex-column bg-info">
-       <h1 >Le concept</h1>
-      <p> La nouvelle forge est une institution comprenant 4 choses : un incubateur d'entreprises, une école web,
+    <div class="container-fluid d-flex flex-column colorgrey" id="le-concept">
+            
+            <h1 >Le concept</h1>
+             <p> La nouvelle forge est une institution comprenant 4 choses : un incubateur d'entreprises, une école web,
             un FabLab, et un espace de co-working. Tout cela dans la joie et la bonne humeur</p>
-           
-         </div>
+    </div>
         
 
-    <div class="container-fluid d-flex flex-column">
+    <div class="container-fluid d-flex" id="coworking">
+            <div class="col-sm">
         <h1>Un espace de coworking</h1>
         <p>Premier pas pour le travailleur indépendant, l’étudiant, le chercheur, l’artiste ou le porteur de projet, l’espace de coworking de Nouvelle Forge propose bureaux, 
-            salles de réunion, outils de design, accès wifi gratuit, connectivité fibre optique…<br>
+            salles de réunion, outils de design, accès wifi gratuit, connectivité fibre optique…
+        </p>
 
-            Au milieu d’autres coworkers du numérique, l’entrepreneur dispose d’un environnement propice afin de travailler sur ses projets, accueillir des clients et fournisseurs ou encore co-concevoir ses produits ou services.<br>
-                
-            L’espace de coworking est une bonne solution pour éviter l’isolement, confronter son idée, être accompagné sur différents aspects : business plan, marketing … et développer son réseau.</p>
-    </div>
+        <p>Au milieu d’autres coworkers du numérique, l’entrepreneur dispose d’un environnement propice afin de travailler sur ses projets, accueillir des clients et fournisseurs ou encore co-concevoir ses produits ou services.<br>
+        </p> 
+        <p>L’espace de coworking est une bonne solution pour éviter l’isolement, confronter son idée, être accompagné sur différents aspects : business plan, marketing … et développer son réseau.</p>
+        </p>
+            </div>  
+        <div class="col-sm">
+                <img src="coworking.jpg" alt="coworking" class="img-thumbnail rounded-circle border-info img2">
+        
+            </div>
+     </div>
 
-    <div class="colorgrey container-fluid d-flex flex-column">
+    <div class="colorgrey container-fluid d-flex flex-column" id="fablab">
             <h1>Un FabLab</h1>
             <p>Le fablab Nouvelle Forge est un atelier ouvert au public équipé de découpe Vinyl, 
                 d’imprimantes 3D, de brodeuse numérique, de découpe laser pilotée par ordinateur. 
                 L’objectif ? Concevoir et tester ses premiers prototypes.</p>
-        </div>
+    </div>
 
-    <div class="container-fluid d-flex flex-column">
+    <div class="container-fluid d-flex flex-column" id="pepiniere">
+        <h1>Une pépinière d’entreprise</h1>
+        <p>A la fois pépinière et hôtel d’entreprises, Nouvelle Forge accueille les entrepreneurs du numérique dans un espace dédié de 800 m² découpé en 18 bureaux et 3 salles de réunion.</p>
+       <p>Outre l’accompagnement personnalisé apporté aux créateurs et développeurs d’entreprises, Nouvelle Forge propose toute une gamme de services : conciergerie, reprographie, gestion du courrier, accueil des visiteurs, accès à la fibre optique…</p>
+    </div>
 
-    
-</body>
+    <div class="container-fluid d-flex flex-column colorgrey" id="pop-school">
+            <h1>Une école : POP school</h1>
+            <p>Les métiers du numérique sont accessibles à tous. Installée à Nouvelle Forge, l’école PopSCHOOL propose des formations gratuites et sans pré requis de diplôme aux métiers du numérique. 
+                Parmi ces formations, on retrouve :
+                 <ul>
+                     <li>Développeur(se) web et mobile dédiée aux jeunes de 18 à 30 ans, sans emploi et hors formation, et d’une durée de 6 mois,</li>
+                     <li>Développeur(se) JAVA EE réalisée en partenariat fort avec le groupe LYRECO, d’une durée de 7 mois et sans condition d’âge,</li>
+                     <li>Data Security Helper (DSH) élaborée avec des experts et professionnels de la Cyber sécurité, d’une durée de 7 mois, pour tous publics et sans condition d’âge.</li>
+                 </ul>
+                POP School est labellisée « Fabrique de la Grande Ecole du Numérique » sur le territoire Hauts-de-France. Elle bénéficie de financements du Fonds social européen dans le cadre du dispositif Initiative pour l’Emploi des Jeunes (IEJ).
+            </p>
+    </div>
+
+
+    </body>
 
 </html>
